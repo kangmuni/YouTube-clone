@@ -97,3 +97,59 @@ header .icons i:hover {
   height: 100%;
   padding: var(--padding);
 }
+
+/* Video info */
+.info {
+  padding: 0 var(--padding);
+}
+/* Video info Frist box */
+.info .firstBox,
+.secondBox {
+  border-bottom: 1px solid var(--grey-light-color);
+}
+.info .firstBox {
+  padding-bottom: var(--padding);
+}
+.info .firstBox .hashAndTitle {
+  display: flex;
+  flex-direction: column;
+}
+.info .firstBox .hashAndTitle .hashtags {
+  color: var(--blue-color);
+  font-size: var(--font-small);
+}
+.info .firstBox .hashAndTitle .title {
+  font-size: var(--font-large);
+}
+.info .firstBox .viewsAndActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.info .firstBox .viewsAndActions .views {
+  color: var(--grey-light-color);
+  font-size: var(--font-medium);
+}
+.info .firstBox .viewsAndActions .actions {
+  display: flex;
+}
+.info .firstBox .viewsAndActions .actions button {
+  display: flex;
+  align-items: center;
+}
+.info .firstBox .viewsAndActions .actions button > span {
+  font-size: 18px;
+  color: var(--grey-light-color);
+}
+.info .firstBox .viewsAndActions .actions li {
+  padding-right: 10px;
+}
+.info .firstBox .viewsAndActions .actions button i:hover {
+  color: white;
+}
+.info .firstBox .viewsAndActions .actions button i {
+  padding-right: 10px;
+  font-size: var(--font-large);
+  color: var(--grey-light-color);
+}
