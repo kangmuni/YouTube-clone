@@ -82,3 +82,18 @@ header .icons i {
 header .icons i:hover {
   color: var(--red-color);
 }
+
+/* Video Player */
+.player {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.player .embed-youtube {
+  background-color: rgb(20, 20, 20);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--padding);
+}
