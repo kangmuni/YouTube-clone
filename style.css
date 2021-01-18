@@ -1,0 +1,38 @@
+:root {
+  /* color */
+  --red-color: rgb(216, 23, 23);
+  --blue-color: rgb(67, 145, 240);
+  --grey-dark-color: rgb(34, 33, 31);
+  --grey-light-color: rgb(155, 151, 151);
+  /* font size */
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 16px;
+  /* size */
+  --padding: 24px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  background: none;
+}
+i {
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
