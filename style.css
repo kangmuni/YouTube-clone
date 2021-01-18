@@ -36,3 +36,49 @@ button:focus {
   cursor: pointer;
   outline: none;
 }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grey-dark-color);
+  padding: var(--padding);
+  font-size: var(--font-large);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+}
+header > div {
+  background-color: var(--grey-dark-color);
+}
+header .menuAndlogo .fa-youtube {
+  color: var(--red-color);
+  margin-left: var(--padding);
+}
+/* header .search {
+    display: flex;
+  }
+  header .search input,
+  header .search input:focus {
+    height: 30px;
+    outline: none;
+    border-color: var(--grey-light-color);
+    color: var(--grey-light-color);
+  }
+  header .search i {
+    background-color: rgb(68, 66, 66);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    font-size: var(--font-small);
+  } */
+header .search {
+  display: none;
+}
+header .icons i {
+  padding-left: var(--padding);
+}
+header .icons i:hover {
+  color: var(--red-color);
+}
