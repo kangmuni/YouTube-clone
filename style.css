@@ -153,3 +153,60 @@ header .icons i:hover {
   font-size: var(--font-large);
   color: var(--grey-light-color);
 }
+
+/* Video info Second box */
+.info .secondBox {
+  display: flex;
+  flex-direction: column;
+}
+.info .secondBox .channel {
+  padding-top: var(--padding);
+  display: flex;
+  justify-content: space-between;
+}
+.info .secondBox .channel .imgAndName {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-medium);
+}
+.info .secondBox .channel .img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: var(--padding);
+}
+.info .secondBox .channel .nameAndSubcsriber {
+  display: flex;
+  flex-direction: column;
+}
+.info .secondBox .channel .nameAndSubcsriber .subscriber {
+  font-size: var(--font-small);
+  color: var(--grey-light-color);
+}
+.info .secondBox .channel .subscribe {
+  background-color: var(--red-color);
+  font-size: var(--font-medium);
+  padding: 0 var(--padding);
+  border-radius: 5%;
+}
+.info .secondBox .contents {
+  padding: 50px;
+  font-size: var(--font-medium);
+  display: flex;
+  flex-direction: column;
+}
+.info .secondBox .contents .title span {
+  color: var(--blue-color);
+}
+.info .secondBox .contents .title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.info .secondBox .contents .moreBtn {
+  color: var(--grey-light-color);
+  font-size: var(--font-small);
+  text-align: left;
+  padding-top: var(--padding);
+}
