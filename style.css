@@ -210,3 +210,61 @@ header .icons i:hover {
   text-align: left;
   padding-top: var(--padding);
 }
+
+/* Video Upnext */
+.upNext {
+  padding: var(--padding);
+  align-items: center;
+}
+.upNext .item {
+  display: flex;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.upNext .item .img img {
+  width: 100%;
+}
+.upNext .item .info .name,
+.views {
+  color: var(--grey-light-color);
+}
+.upNext .item .img {
+  flex: 1 1 35%;
+}
+.upNext .item .info {
+  flex: 1 1 60%;
+  padding: 0 0 0 10px;
+}
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+  height: 100%;
+}
+
+/* Video Upnext */
+.upNext {
+  padding: var(--padding);
+  align-items: center;
+}
+.upNext .item {
+  display: flex;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.upNext .item .img img {
+  width: 100%;
+}
+.upNext .item .info .name,
+.views {
+  color: var(--grey-light-color);
+}
+.upNext .item .img {
+  flex: 1 1 35%;
+}
+.upNext .item .info {
+  flex: 1 1 60%;
+  padding: 0 0 0 10px;
+}
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+  height: 100%;
+}
