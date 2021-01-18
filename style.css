@@ -268,3 +268,26 @@ header .icons i:hover {
   flex: 1 1 5%;
   height: 100%;
 }
+
+.PAIandupNext {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1268px) {
+  .player .embed-youtube {
+    padding: 30px;
+  }
+  .PAIandupNext {
+    flex-direction: row;
+  }
+  .playerAndInfo {
+    width: 110%;
+  }
+  .info {
+    padding: 0 30px;
+  }
+  .upNext {
+    padding-top: 30px;
+    padding-left: 0;
+  }
+}
