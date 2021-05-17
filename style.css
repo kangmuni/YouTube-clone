@@ -2,20 +2,16 @@
   /* color */
   --red-color: rgb(216, 23, 23);
   --blue-color: rgb(67, 145, 240);
-  --grey-dark-color: rgb(34, 33, 31);
-  --grey-light-color: rgb(155, 151, 151);
-  /* font size */
-  --font-large: 24px;
-  --font-medium: 20px;
-  --font-small: 16px;
-  /* size */
-  --padding: 24px;
+  --grey-color: rgb(33, 33, 33);
+  --darkGrey-color: rgb(48, 48, 48);
+  --lightGrey-color: rgb(144, 144, 144);
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(25, 25, 25);
   color: white;
 }
 li {
@@ -30,8 +26,7 @@ i {
   background: none;
   color: white;
 }
-button,
-button:focus {
+button {
   border: none;
   cursor: pointer;
   outline: none;
@@ -41,74 +36,80 @@ button:focus {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--grey-dark-color);
-  padding: var(--padding);
-  font-size: var(--font-large);
   position: sticky;
   top: 0;
   z-index: 1;
-  font-family: "Oswald", sans-serif;
+  background-color: var(--grey-color);
+  font-size: 1.35rem;
+  padding: 1em;
+  font-family: 'Oswald', sans-serif;
 }
 header > div {
-  background-color: var(--grey-dark-color);
+  background-color: var(--grey-color);
 }
 header .menuAndlogo .fa-youtube {
   color: var(--red-color);
-  margin-left: var(--padding);
+  margin-left: 1em;
 }
-/* header .search {
-    display: flex;
-  }
-  header .search input,
-  header .search input:focus {
-    height: 30px;
-    outline: none;
-    border-color: var(--grey-light-color);
-    color: var(--grey-light-color);
-  }
-  header .search i {
-    background-color: rgb(68, 66, 66);
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    font-size: var(--font-small);
-  } */
 header .search {
   display: none;
+  align-content: center;
+}
+header .search input {
+  width: 40em;
+  height: 35px;
+  outline: none;
+  border: 2px solid var(--darkGrey-color);
+  color: var(--lightGrey-color);
+  background-color: rgb(20, 20, 20);
+  font-size: 1rem;
+}
+header .search button {
+  width: 5em;
+  height: 35px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgb(53, 52, 52);
+}
+header .search button i {
+  color: var(--lightGrey-color);
 }
 header .icons i {
-  padding-left: var(--padding);
+  padding-left: 1.5rem;
 }
 header .icons i:hover {
   color: var(--red-color);
+}
+header .icons .fa-search {
+  visibility: visible;
 }
 
 /* Video Player */
 .player {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 55%;
 }
 .player .embed-youtube {
-  background-color: rgb(20, 20, 20);
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0.8rem; */
+  /* left: 0; */
   width: 100%;
   height: 100%;
-  padding: var(--padding);
+  padding: 2rem;
 }
 
 /* Video info */
 .info {
-  padding: 0 var(--padding);
+  padding: 0 2rem;
 }
-/* Video info Frist box */
+
+/* Video info First box */
 .info .firstBox,
 .secondBox {
-  border-bottom: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--darkGrey-color);
 }
 .info .firstBox {
-  padding-bottom: var(--padding);
+  padding-bottom: 1.5rem;
 }
 .info .firstBox .hashAndTitle {
   display: flex;
@@ -116,20 +117,20 @@ header .icons i:hover {
 }
 .info .firstBox .hashAndTitle .hashtags {
   color: var(--blue-color);
-  font-size: var(--font-small);
+  font-size: 1rem;
 }
 .info .firstBox .hashAndTitle .title {
-  font-size: var(--font-large);
+  font-size: 1.4rem;
 }
 .info .firstBox .viewsAndActions {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 .info .firstBox .viewsAndActions .views {
-  color: var(--grey-light-color);
-  font-size: var(--font-medium);
+  font-size: 1rem;
+  color: var(--lightGrey-color);
 }
 .info .firstBox .viewsAndActions .actions {
   display: flex;
@@ -139,19 +140,19 @@ header .icons i:hover {
   align-items: center;
 }
 .info .firstBox .viewsAndActions .actions button > span {
-  font-size: 18px;
-  color: var(--grey-light-color);
+  font-size: 1rem;
+  color: var(--lightGrey-color);
 }
 .info .firstBox .viewsAndActions .actions li {
-  padding-right: 10px;
+  padding-right: 1.5rem;
 }
 .info .firstBox .viewsAndActions .actions button i:hover {
   color: white;
 }
 .info .firstBox .viewsAndActions .actions button i {
-  padding-right: 10px;
-  font-size: var(--font-large);
-  color: var(--grey-light-color);
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--lightGrey-color);
 }
 
 /* Video info Second box */
@@ -160,38 +161,40 @@ header .icons i:hover {
   flex-direction: column;
 }
 .info .secondBox .channel {
-  padding-top: var(--padding);
+  padding-top: 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .info .secondBox .channel .imgAndName {
   display: flex;
   align-items: center;
-  font-size: var(--font-medium);
 }
 .info .secondBox .channel .img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-right: var(--padding);
+  margin-right: 1.2rem;
 }
 .info .secondBox .channel .nameAndSubcsriber {
   display: flex;
   flex-direction: column;
+  font-size: 1.1rem;
 }
 .info .secondBox .channel .nameAndSubcsriber .subscriber {
-  font-size: var(--font-small);
-  color: var(--grey-light-color);
+  font-size: 0.9rem;
+  color: var(--lightGrey-color);
 }
 .info .secondBox .channel .subscribe {
+  height: 2.5rem;
   background-color: var(--red-color);
-  font-size: var(--font-medium);
-  padding: 0 var(--padding);
+  font-size: 1rem;
+  padding: 0 1.5em;
   border-radius: 5%;
 }
 .info .secondBox .contents {
-  padding: 50px;
-  font-size: var(--font-medium);
+  padding: 2em 2em 2em 4em;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
 }
@@ -205,20 +208,20 @@ header .icons i:hover {
   overflow: hidden;
 }
 .info .secondBox .contents .moreBtn {
-  color: var(--grey-light-color);
-  font-size: var(--font-small);
+  color: var(--lightGrey-color);
+  font-size: 0.9rem;
   text-align: left;
-  padding-top: var(--padding);
+  padding-top: 1em;
 }
 
 /* Video Upnext */
 .upNext {
-  padding: var(--padding);
+  padding: 1.5rem 2.5rem;
   align-items: center;
 }
 .upNext .item {
   display: flex;
-  padding-bottom: 5px;
+  margin: 0 0.3rem 0.25rem 0.3rem;
   cursor: pointer;
 }
 .upNext .item .img img {
@@ -226,68 +229,46 @@ header .icons i:hover {
 }
 .upNext .item .info .name,
 .views {
-  color: var(--grey-light-color);
-}
-.upNext .item .img {
-  flex: 1 1 25%;
-}
-.upNext .item .info {
-  flex: 1 1 70%;
-  padding: 0 0 0 10px;
-}
-.upNext .item .moreBtn {
-  flex: 1 1 5%;
-  height: 100%;
-}
-
-/* Video Upnext */
-.upNext {
-  padding: var(--padding);
-  align-items: center;
-}
-.upNext .item {
-  display: flex;
-  padding-bottom: 5px;
-  cursor: pointer;
-}
-.upNext .item .img img {
-  width: 100%;
-}
-.upNext .item .info .name,
-.views {
-  color: var(--grey-light-color);
+  color: var(--lightGrey-color);
 }
 .upNext .item .img {
   flex: 1 1 35%;
 }
 .upNext .item .info {
   flex: 1 1 60%;
-  padding: 0 0 0 10px;
+  padding-left: 0.5rem;
 }
 .upNext .item .moreBtn {
   flex: 1 1 5%;
   height: 100%;
+  margin-top: 0.3rem;
+  text-align: right;
 }
 
+/* PAIandupNext */
 .PAIandupNext {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (min-width: 1268px) {
-  .player .embed-youtube {
-    padding: 30px;
-  }
+  /* 화면이 커졌을때 */
   .PAIandupNext {
     flex-direction: row;
   }
   .playerAndInfo {
-    width: 110%;
+    width: 130%;
   }
-  .info {
-    padding: 0 30px;
+  header .search {
+    display: flex;
+  }
+  header .icons .fa-search {
+    visibility: hidden;
   }
   .upNext {
-    padding-top: 30px;
-    padding-left: 0;
+    padding: 2rem 0;
+  }
+  .upNext .item .moreBtn {
+    text-align: center;
   }
 }
