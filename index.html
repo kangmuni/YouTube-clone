@@ -3,34 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Youtube Clone</title>
     <script
       src="https://kit.fontawesome.com/be7498019b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" 
-      rel="stylesheet">
-    <!-- JS parsing-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="menuAndlogo">
-        <i class="fas fa-align-justify"></i>
+    <header id="header">
+      <div class="header__logo">
         <a href=""><i class="fab fa-youtube"></i>&nbsp;YouTube</a>
       </div>
-      <div class="search">
-          <input type="text" value="&nbsp;검색" />
-          <button>
-            <i class="fas fa-search"></i>
-          </button>
+      <div class="header__search">
+        <input type="text" value="&nbsp;검색" />
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-      <div class="icons">
+      <div class="header__icons">
         <i class="fas fa-search"></i>
         <i class="fas fa-video"></i>
         <i class="fas fa-bell"></i>
@@ -40,268 +38,322 @@
     </header>
     <!-- PAI랑 upNext 하나로 묶기 -->
     <div class="PAIandupNext">
-    <!-- Video Player & Video Info 인포 하나로 묶기 -->
+      <!-- Video Player & Video Info 인포 하나로 묶기 -->
       <div class="playerAndInfo">
         <!-- Video Player -->
         <section class="player">
-          <!-- <video controls src="" ></video> -->
-          <iframe class="embed-youtube"
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/DpP0BELFAEA"
-          frameborder="0" 
-          allow="autoplay" 
-          allowfullscreen></iframe>
+          <iframe
+            class="player__embed-youtube"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/DpP0BELFAEA"
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen
+          >
+          </iframe>
         </section>
-          <!-- Video Info -->
-          <section class="info">
-            <!-- Video Info 첫번째 박스  -->
-              <div class="firstBox">
-                <div class="hashAndTitle">
-                  <a href="#"><span class="hashtags">#citypop #シティポップ #citypopcompilation</span></a>
-                  <span class="title">City Pop シティポップ Compilation</span>
-                </div>
-                <div class="viewsAndActions">
-                  <div class="views">조회수 249,538회</div>
-                  <div class="actions">
-                    <li>
-                      <button>
-                        <i class="active fas fa-thumbs-up"></i><span>9.2천</span>
-                      </button>
-                    </li>
-                  <li>
-                      <button>
-                        <i class="active fas fa-thumbs-down"></i><span>52</span>
-                      </button>
-                    </li>
-                  <li>
-                      <button>
-                        <i class="fas fa-share"></i><span>공유</span>
-                      </button>
-                    </li>
-                  <li>
-                      <button>
-                        <i class="fas fa-save"></i><span>저장</span>
-                      </button>
-                    </li>
-                  </div>
+        <!-- Video Info -->
+        <section class="info">
+          <!-- Video Info 첫번째 박스  -->
+          <div class="info__main">
+            <div class="main">
+              <div class="main__top">
+                <a href="#"
+                  ><span class="hashtags"
+                    >#citypop #シティポップ #citypopcompilation</span
+                  ></a
+                >
+                <span class="title">City Pop シティポップ Compilation</span>
+              </div>
+              <div class="main__bottom">
+                <div class="views">조회수 249,538회</div>
+                <div class="actions">
+                  <li class="action">
+                    <button class="action__btn">
+                      <i class="active fas fa-thumbs-up"></i
+                      ><span class="action__title">9.2천</span>
+                    </button>
+                  </li>
+                  <li class="action">
+                    <button class="action__btn">
+                      <i class="active fas fa-thumbs-down"></i
+                      ><span class="action__title">52</span>
+                    </button>
+                  </li>
+                  <li class="action">
+                    <button class="action__btn">
+                      <i class="fas fa-share"></i
+                      ><span class="action__title">공유</span>
+                    </button>
+                  </li>
+                  <li class="action">
+                    <button class="action__btn">
+                      <i class="fas fa-save"></i
+                      ><span class="action__title">저장</span>
+                    </button>
+                  </li>
                 </div>
               </div>
-              <!-- Video Info 두번째 박스-->
-              <div class="secondBox">
-                  <div class="channel">
-                    <a class="imgAndName" href="#">
-                      <img class="img" src="images/profile.png" alt="" />
-                      <div class="nameAndSubcsriber">
-                        <div class="name">Jimmy Koproto</div>
-                        <div class="subscriber">구독자 4.5만명</div>
-                      </div>
-                    </a>
-                    <button class="subscribe">구독</button>
-                  </div>
-                  <div class="contents">
-                    <div class="title clamp">
-                      🌃  City Pop シティーポップ 
-                      <a href="#"><span>#citypop #シティーポップ #citypopcompilation</span></a><br />
-                      Thanks for subscribing my channel. Like and share if you're interested.<br />
-                      どうもありがとうございます 🙇‍♂️<br />
-                      <br />
-                      🔊   Tracklist:<br />
-                      『00:00』: 竹内まりや ー 夢の続き<br />
-                      『04:58』: 黒住憲五 ー Juggler<br />
-                      『08:54』: カシオペア ー 朝焼け<br />
-                      『13:46』: AB'S ー By The End of Century<br />
-                      『18:16』: 池田典代 ー Dream In The Street<br />
-                      『23:00』: 鳥山雄司 ー Maze<br />
-                      『26:05』: 八神純子 ー 黄昏のBAY CITY<br /> 
-                      『29:57』: 松原みき ー 真夜中のドア ~ Stay With Me<br /> 
-                      『35:13』: 角松敏生 ー If You...<br />
-                      『39:37』: 山下達郎 ー Magic Ways<br />
-                      『43:51』: Cosmos ー ミッドナイト・シャフル<br />
-                      『48:18』: 角松敏生 ー  Anklet<br />
-                      『52:15』: 角松敏生 ー Airport Lady<br />
-                      『56:10』: 黒住憲五 ー Moonlight Serenade<br />
-                      『01:00:15』: 秋元薫 ‎ー Dress Down<br />
-                      『01:04:17』: 角松敏生 ー Space Scraper<br />
-                      『01:09:15』: 鳥山雄司 ー Stranger In The Mirror<br />
-                      『01:13:24』: 吉田美奈子 ー TOWN<br />
-                      『01:19:44』: 難波弘之 ー シルバーグレイの街<br />
-                      『01:24:07』: 菊池桃子 ー Mystical Composer<br />
-                      『01:33:36』: 山下達郎 ー Sparkle<br />
-                      </div>
-                      <button class="moreBtn">더보기</button>
-                  </div>
+            </div>
+          </div>
+          <!-- Video Info 두번째 박스-->
+          <div class="info__channel">
+            <div class="channel">
+              <a class="channel__link" href="#">
+                <img class="channel__img" src="images/profile.png" alt="" />
+                <div class="channel__description">
+                  <div class="channel__name">Jimmy Koproto</div>
+                  <div class="channel__subscriber">구독자 4.5만명</div>
+                </div>
+              </a>
+              <button class="channel__subscribe">구독</button>
+            </div>
+            <div class="contents">
+              <div class="contents__title clamp">
+                🌃 City Pop シティーポップ
+                <a href="#"
+                  ><span class="contents__hashtags"
+                    >#citypop #シティーポップ #citypopcompilation</span
+                  ></a
+                ><br />
+                Thanks for subscribing my channel. Like and share if you're
+                interested.<br />
+                どうもありがとうございます 🙇‍♂️<br />
+                <br />
+                🔊 Tracklist:<br />
+                『00:00』: 竹内まりや ー 夢の続き<br />
+                『04:58』: 黒住憲五 ー Juggler<br />
+                『08:54』: カシオペア ー 朝焼け<br />
+                『13:46』: AB'S ー By The End of Century<br />
+                『18:16』: 池田典代 ー Dream In The Street<br />
+                『23:00』: 鳥山雄司 ー Maze<br />
+                『26:05』: 八神純子 ー 黄昏のBAY CITY<br />
+                『29:57』: 松原みき ー 真夜中のドア ~ Stay With Me<br />
+                『35:13』: 角松敏生 ー If You...<br />
+                『39:37』: 山下達郎 ー Magic Ways<br />
+                『43:51』: Cosmos ー ミッドナイト・シャフル<br />
+                『48:18』: 角松敏生 ー Anklet<br />
+                『52:15』: 角松敏生 ー Airport Lady<br />
+                『56:10』: 黒住憲五 ー Moonlight Serenade<br />
+                『01:00:15』: 秋元薫 ‎ー Dress Down<br />
+                『01:04:17』: 角松敏生 ー Space Scraper<br />
+                『01:09:15』: 鳥山雄司 ー Stranger In The Mirror<br />
+                『01:13:24』: 吉田美奈子 ー TOWN<br />
+                『01:19:44』: 難波弘之 ー シルバーグレイの街<br />
+                『01:24:07』: 菊池桃子 ー Mystical Composer<br />
+                『01:33:36』: 山下達郎 ー Sparkle<br />
               </div>
-          </section>
+              <button class="contents__moreBtn">더보기</button>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- Video Upnext -->
       <section class="upNext">
         <ul>
           <li class="item" data-id="1">
-            <div class="img"><img src="images/img1.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >[Playlist] 어쩌다보니 여성 보컬 특집이 된 일본 시티팝 모음 / Japanese City Pop Mix Vol.13
-                </span>
-                <div class="name">MIDNIGHT WITH CITYPOPS</div>
-                <div class="views">조회수 3,723회 / 4개월 전</div>
+            <div class="item__img"><img src="images/img1.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >[Playlist] 어쩌다보니 여성 보컬 특집이 된 일본 시티팝 모음 /
+                Japanese City Pop Mix Vol.13
+              </span>
+              <div class="item__name">MIDNIGHT WITH CITYPOPS</div>
+              <div class="item__views">조회수 3,723회 / 4개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="2">
-            <div class="img"><img src="images/img2.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩할때 듣기 좋은 노래 • 3 hour mix • lofi hip hop mix • beats to relax
-                </span>
-                <div class="name">Lofi 코딩</div>
-                <div class="views">조회수 4.9천회 / 3년 전</div>
+            <div class="item__img"><img src="images/img2.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩할때 듣기 좋은 노래 • 3 hour mix • lofi hip
+                hop mix • beats to relax
+              </span>
+              <div class="item__name">Lofi 코딩</div>
+              <div class="item__views">조회수 4.9천회 / 3년 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="3">
-              <div class="img"><img src="images/img3.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >日本の80年代シティポップ - 80'S Japanese City Pop Vol.5
-                  </span>
-                  <div class="name">City life Song</div>
-                  <div class="views">조회수 77만회 / 6개월 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img3.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >日本の80年代シティポップ - 80'S Japanese City Pop Vol.5
+              </span>
+              <div class="item__name">City life Song</div>
+              <div class="item__views">조회수 77만회 / 6개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="4">
-            <div class="img"><img src="images/img4.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >[Playlist] 일본 시티팝 JAPANESE CITY POP 日本のシティポップ VOL.15
-                </span>
-                <div class="name">MIDNIGHT WITH CITYPOPS</div>
-                <div class="views">조회수 4,708회 / 1개월 전</div>
+            <div class="item__img"><img src="images/img4.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >[Playlist] 일본 시티팝 JAPANESE CITY POP 日本のシティポップ
+                VOL.15
+              </span>
+              <div class="item__name">MIDNIGHT WITH CITYPOPS</div>
+              <div class="item__views">조회수 4,708회 / 1개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
           <li class="item" data-id="5">
-              <div class="img"><img src="images/img5.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >日本の80年代シティポップ - 80'S Japanese City Pop Vol.1
-                  </span>
-                  <div class="name">City life Song</div>
-                  <div class="views">조회수 151만회 / 9개월 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img5.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >日本の80年代シティポップ - 80'S Japanese City Pop Vol.1
+              </span>
+              <div class="item__name">City life Song</div>
+              <div class="item__views">조회수 151만회 / 9개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="6">
-            <div class="img"><img src="images/img6.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩 / 과제 할 때 집중 해서 듣기 좋은 음악 | 2 hour playlist | beats to coding to
-                </span>
-                <div class="name">Lofi 코딩</div>
-                <div class="views">조회수 8.4만회 / 2개월 전</div>
+            <div class="item__img"><img src="images/img6.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩 / 과제 할 때 집중 해서 듣기 좋은 음악 | 2
+                hour playlist | beats to coding to
+              </span>
+              <div class="item__name">Lofi 코딩</div>
+              <div class="item__views">조회수 8.4만회 / 2개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
           <li class="item" data-id="7">
-              <div class="img"><img src="images/img7.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >80년대 리듬감있는 일본시티팝 모음 80's City pop Mix
-                  </span>
-                  <div class="name">은하짱</div>
-                  <div class="views">조회수 348만회 / 11개월 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img7.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >80년대 리듬감있는 일본시티팝 모음 80's City pop Mix
+              </span>
+              <div class="item__name">은하짱</div>
+              <div class="item__views">조회수 348만회 / 11개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="8">
-              <div class="img"><img src="images/img8.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >Japanese City Pop Mixtape Vol.13 - TOKYO NIGHTS［80s］〈シティ・ポップ〉〈시티팝〉
-                  </span>
-                  <div class="name">Melon Groove</div>
-                  <div class="views">조회수 1.8천회 / 2개월 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img8.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >Japanese City Pop Mixtape Vol.13 - TOKYO
+                NIGHTS［80s］〈シティ・ポップ〉〈시티팝〉
+              </span>
+              <div class="item__name">Melon Groove</div>
+              <div class="item__views">조회수 1.8천회 / 2개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="9">
-              <div class="img"><img src="images/img9.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >‎‏‎‎City Pop Mix Vol.6
-                  </span>
-                  <div class="name">ROKER</div>
-                  <div class="views">조회수 38만회 / 1년 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img9.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title">‎‏‎‎City Pop Mix Vol.6 </span>
+              <div class="item__name">ROKER</div>
+              <div class="item__views">조회수 38만회 / 1년 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item">
-              <div class="img"><img src="images/img10.png" alt="" /></div>
-              <div class="info">
-                  <span class="title"
-                  >ａｔ ｃａｆｅ [LoFi Hip hop Jazz mix]
-                  </span>
-                  <div class="name">Syno</div>
-                  <div class="views">조회수 141만회 / 2년 전</div>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="item__img"><img src="images/img10.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >ａｔ ｃａｆｅ [LoFi Hip hop Jazz mix]
+              </span>
+              <div class="item__name">Syno</div>
+              <div class="item__views">조회수 141만회 / 2년 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="10">
-            <div class="img"><img src="images/img11.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >𝙹 𝙰 𝙿 𝙰 𝙽 𝙴 𝚂 𝙴‏‏‎ ‎‎‎‏‏‎ ‎‎シティーポップ‏‏‎‏‏‎ ‎ ‎‏‎‎City Pop/Funk 𝙰 𝙾 𝚁 Compilation‏‏‎‏‏‎ ‎‏‏‎ ‎パート #2
-                </span>
-                <div class="name">Jimmy Koproto</div>
-                <div class="views">조회수 151만회  9개월 전</div>
-            </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-        <li class="item" data-id="11">
-          <div class="img"><img src="images/img12.png" alt="" /></div>
-          <div class="info">
-              <span class="title"
-              >한국 시티팝(City Pop) 노래 모음. Vol 1ㅣ KOREAN CITYPOP STYLE MIX. VOL 1
+            <div class="item__img"><img src="images/img11.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >𝙹 𝙰 𝙿 𝙰 𝙽 𝙴 𝚂 𝙴‏‏‎ ‎‎‎‏‏‎ ‎‎シティーポップ‏‏‎‏‏‎ ‎ ‎‏‎‎City
+                Pop/Funk 𝙰 𝙾 𝚁 Compilation‏‏‎‏‏‎ ‎‏‏‎ ‎パート #2
               </span>
-              <div class="name">LONESOME BEAT</div>
-              <div class="views">조회수 82만회 / 4개월 전</div>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-          <li class="item" data-id="12">
-            <div class="img"><img src="images/img13.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
-                >[Playlist] 밤에 듣기 좋은 센티멘탈 일본 시티팝 믹스 / Japanese City Pop Mix Vol.1
-                </span>
-                <div class="name">MIDNIGHT WITH CITYPOPS</div>
-                <div class="views">조회수 7.9만회 / 1개월 전</div>
+              <div class="item__name">Jimmy Koproto</div>
+              <div class="item__views">조회수 151만회 9개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item" data-id="11">
+            <div class="item__img"><img src="images/img12.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >한국 시티팝(City Pop) 노래 모음. Vol 1ㅣ KOREAN CITYPOP STYLE
+                MIX. VOL 1
+              </span>
+              <div class="item__name">LONESOME BEAT</div>
+              <div class="item__views">조회수 82만회 / 4개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item" data-id="12">
+            <div class="item__img"><img src="images/img13.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
+                >[Playlist] 밤에 듣기 좋은 센티멘탈 일본 시티팝 믹스 / Japanese
+                City Pop Mix Vol.1
+              </span>
+              <div class="item__name">MIDNIGHT WITH CITYPOPS</div>
+              <div class="item__views">조회수 7.9만회 / 1개월 전</div>
+            </div>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="13">
-            <div class="img"><img src="images/img14.png" alt="" /></div>
-            <div class="info">
-                <span class="title"
+            <div class="item__img"><img src="images/img14.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title"
                 >[Playlist] 너는 운전만해 시티팝은 내가 틀게 | City Pop Playlist
-                </span>
-                <div class="name">씨끄릿 secret playlist</div>
-                <div class="views">조회수 23만회 / 1개월 전</div>
+              </span>
+              <div class="item__name">씨끄릿 secret playlist</div>
+              <div class="item__views">조회수 23만회 / 1개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
           <li class="item" data-id="14">
-            <div class="img"><img src="images/img15.png" alt="" /></div>
-            <div class="info">
-                <span class="title">
-                  Japanese 80s City Pop Compilation
-                </span>
-                <div class="name">summer JPN</div>
-                <div class="views">조회수 7만회 / 3개월 전</div>
+            <div class="item__img"><img src="images/img15.png" alt="" /></div>
+            <div class="item__info">
+              <span class="item__title">
+                Japanese 80s City Pop Compilation
+              </span>
+              <div class="item__name">summer JPN</div>
+              <div class="item__views">조회수 7만회 / 3개월 전</div>
             </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            <button class="item__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
           </li>
+        </ul>
       </section>
     </div>
   </body>
