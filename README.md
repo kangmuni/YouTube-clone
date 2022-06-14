@@ -1,4 +1,4 @@
-# YouTube-Clone / 반응형 유튜브 클론
+# Responsive-YouTube-Clone / 반응형 유튜브 클론
 > **스택**
 1. HTML
 2. CSS
