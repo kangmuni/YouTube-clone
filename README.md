@@ -1,7 +1,7 @@
 # Responsive-YouTube-Clone / 반응형 유튜브 클론
 > **스택**
 1. HTML : 복잡 할 수 있는 레이아웃을 시멘틱적인 구조로 짜는 방법을 배움
-2. CSS : flexbox 활용과 몰랐던 기능들을 숙지하게 됨
+2. CSS : flexbox 활용과 새로운 기능들을 숙지하게 됨
 3. JavaScript : toggle 기능을 위해 간단하게 작성
 
 > **기능**
